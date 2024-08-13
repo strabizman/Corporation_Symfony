@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-start items-center">
+          <div class="text-white text-lg font-bold">
+          
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white">Accueil</a>
+            <a href="#" class="text-gray-300 hover:text-white">Galerie</a>
+            
+            <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden">
+          <a href="#" class="block text-gray-300 hover:text-white py-2">Accueil</a>
+          <a href="#" class="block text-gray-300 hover:text-white py-2">À propos</a>
+         
+          <a href="#" class="block text-gray-300 hover:text-white py-2">Contact</a>
+        </div>
+      </nav>
+
+      <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+    </header>
+    <h1 class="text-3xl font-bold underline text-center mb-6">
+      ZoneInondableConnect  
+    </h1>
+
+    <p class="m-2">Fusce ac orci mattis, placerat nunc et, maximus massa. Duis vitae congue mauris, in malesuada massa. Donec hendrerit lectus vel est faucibus, nec ornare eros scelerisque. In placerat, nibh id viverra dapibus, risus diam porta odio,
+       pulvinar molestie nisl risus et velit. Phasellus tempus leo urna, scelerisque tincidunt justo pretium at. Fusce quis est tempor, condimentum magna in, pellentesque justo. Nam vestibulum ipsum ac pharetra volutpat. Phasellus metus magna, 
+       mollis non orci in, tempor fermentum mi. Vivamus dapibus nisl ante, nec gravida urna tempus eget. Ut volutpat eros dui, nec imperdiet nibh volutpat sit amet. Nulla rhoncus tincidunt eros, eu bibendum tellus venenatis sed. Suspendisse interdum dolor enim, 
+       at congue lacus molestie a. Curabitur leo libero, feugiat eget magna hendrerit, tempor maximus mauris. Fusce neque lacus, blandit quis dui sit amet, mattis venenatis diam. Morbi in augue eu ante scelerisque commodo. Integer non odio risus.</p>
+
+       <p class="m-2">Duis egestas tellus nec mollis pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet dui mauris, vitae varius justo elementum sit amet. Vivamus ac fringilla nulla, eu faucibus magna. 
+        Donec efficitur orci leo, ac suscipit dolor placerat quis. Aliquam quam ante, vulputate sed metus sit amet, ultrices lacinia arcu. Proin tincidunt magna id ante tempus, sit amet hendrerit ante interdum. Quisque lobortis ipsum a sapien laoreet,
+         vitae vulputate leo sodales. Duis ac condimentum tortor. 
+        Pellentesque maximus ullamcorper erat, et fermentum neque congue rhoncus. Vestibulum sit amet urna congue, ornare quam vel, aliquam felis. Vivamus pretium bibendum faucibus.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div>
+            <img class="img" src="./../../public/img/A2.jpg" alt="">
+            <p class="m-2">Phasellus pulvinar a nisi vitae dapibus. Vivamus suscipit, sem vel aliquam egestas, lorem eros fringilla odio, rhoncus rutrum eros diam eget sem. Curabitur ut nibh dui. Nullam et dolor vitae augue porttitor luctus.
+                 Curabitur egestas ornare urna eu tincidunt. Suspendisse cursus ante erat, id egestas ante sollicitudin euismod. Quisque gravida elit in lorem ultrices elementum. Mauris ipsum sapien, condimentum vel ante sed,
+                  lobortis rhoncus sem. Cras cursus magna eget nulla consectetur consequat. Pellentesque eget elementum orci.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/Bengale.png" alt="">
+            <p class="m-2">Phasellus pulvinar a nisi vitae dapibus. Vivamus suscipit, sem vel aliquam egestas, lorem eros fringilla odio, rhoncus rutrum eros diam eget sem. Curabitur ut nibh dui. Nullam et dolor vitae augue porttitor luctus.
+                Curabitur egestas ornare urna eu tincidunt. Suspendisse cursus ante erat, id egestas ante sollicitudin euismod. Quisque gravida elit in lorem ultrices elementum. Mauris ipsum sapien, condimentum vel ante sed,
+                 lobortis rhoncus sem. Cras cursus magna eget nulla consectetur consequat. Pellentesque eget elementum orci.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/Carrak.jpg" alt="">
+            <p class="m-2">Nam sollicitudin elit quis sagittis facilisis. Nunc eu urna vel ipsum auctor suscipit ac eu augue. Vivamus eu elit placerat, egestas enim et, eleifend odio. 
+                Fusce facilisis facilisis lacinia. Aliquam nulla est, dictum sed lacinia hendrerit, viverra at felis. Nulla volutpat neque sit amet quam bibendum, vitae ultrices augue vulputate.
+                 Nam turpis eros, dictum quis vulputate id, ultrices id est. Duis iaculis egestas diam, ut tempor nulla consectetur sit amet. 
+                 Sed tortor dui, porta vitae enim eu, vestibulum malesuada enim. In mollis eget ante vel aliquam. Cras sodales ullamcorper velit, ut vestibulum eros lobortis in. Aenean dignissim lacus eget ex iaculis auctor. Nunc vel tristique risus.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/Kraken.jpg" alt="">
+            <p class="m-2">Ut lobortis sapien id sem bibendum, a molestie orci tincidunt. Ut a tortor augue. Nunc orci enim, varius ut odio vitae, dictum ultricies magna. Duis at neque maximus massa mollis auctor eget semper augue. Nam mollis consectetur orci ut dictum.
+                 Donec tristique id sapien vel molestie. Phasellus interdum vitae risus varius tristique. Integer non venenatis magna, a semper quam. Vestibulum suscipit auctor ex, eu venenatis magna aliquet in. Sed non massa mollis, efficitur orci et, sollicitudin neque.
+                 Quisque ornare sed nulla quis tincidunt. 
+                 Nulla congue odio in ligula tempus, quis volutpat purus egestas. Integer blandit eleifend facilisis. Vestibulum ultrices lorem vitae euismod dapibus. Ut sodales egestas dolor. Nam maximus nisl vel nisl maximus laoreet.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/M2.jpg" alt="">
+            <p class="m-2">Ut id lectus ac ex lobortis tincidunt non vel erat. Nunc sit amet iaculis diam. Mauris at urna ac nunc imperdiet rhoncus. Cras accumsan quam metus, et gravida ligula venenatis vitae. Sed non turpis quis tellus dignissim molestie at quis nunc.
+                 Aliquam iaculis, justo vel vulputate ullamcorper, felis odio ullamcorper odio, non euismod dui sapien ac tortor. Aenean tempus, nunc eget congue cursus, quam est lobortis elit, in suscipit nunc nunc nec lorem.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/Merchantman.jpg" alt="">
+            <p class="m-2">Maecenas molestie sem id finibus porttitor. Suspendisse massa augue, pretium vitae lobortis vel, rhoncus at leo. Nunc in viverra mi, vel feugiat leo. Donec at metus tortor. In non dolor ultricies, convallis mi ac, luctus risus.
+                 Quisque ultrices elit sit amet turpis interdum, ut ultrices massa tincidunt. 
+                Mauris venenatis lorem elit, eu ultricies dolor dictum nec. Vestibulum ligula justo, bibendum quis elit et, rutrum finibus libero. Morbi eget eros vestibulum, tincidunt diam in, ornare turpis. Nulla facilisi. Nulla facilisi.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/Perseus.jpg" alt="">
+            <p class="m-2">Duis egestas tellus nec mollis pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet dui mauris, vitae varius justo elementum sit amet. Vivamus ac fringilla nulla, eu faucibus magna. 
+                Donec efficitur orci leo, ac suscipit dolor placerat quis. Aliquam quam ante, vulputate sed metus sit amet, ultrices lacinia arcu. Proin tincidunt magna id ante tempus, sit amet hendrerit ante interdum. Quisque lobortis ipsum a sapien laoreet,
+                 vitae vulputate leo sodales. Duis ac condimentum tortor. 
+                Pellentesque maximus ullamcorper erat, et fermentum neque congue rhoncus. Vestibulum sit amet urna congue, ornare quam vel, aliquam felis. Vivamus pretium bibendum faucibus.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/raw.jfif" alt="">
+            <p class="m-2">Cras convallis lorem purus. Aenean hendrerit mi urna, in blandit urna gravida sed. Cras tempus metus nec sapien dignissim, at dignissim ante sagittis. Cras finibus mi in tortor molestie tempus. In luctus lacus sit amet justo hendrerit eleifend.
+                 Aliquam erat volutpat. Aliquam congue malesuada ipsum vel ullamcorper. Nullam dui dui, vestibulum quis sollicitudin ut, 
+                malesuada ac ligula. Mauris vestibulum mollis nulla, a efficitur est aliquet in. Donec tristique ornare ante eget sodales. Integer efficitur vitae lorem at accumsan. Donec a ultrices mauris, ac iaculis purus. Phasellus non dui nec nisi tristique malesuada. Quisque turpis odio, gravida eu efficitur nec, dignissim ac dui.</p>
+        </div>
+        <div>
+            <img class="img" src="./../../public/img/PerseusFog.jpg" alt="">
+            <p class="m-2">Fusce ac orci mattis, placerat nunc et, maximus massa. Duis vitae congue mauris, in malesuada massa. Donec hendrerit lectus vel est faucibus, nec ornare eros scelerisque. In placerat, nibh id viverra dapibus, risus diam porta odio, pulvinar molestie nisl risus et velit. Phasellus tempus leo urna, scelerisque tincidunt justo pretium at.
+                 Fusce quis est tempor, condimentum magna in, pellentesque justo. Nam vestibulum ipsum ac pharetra volutpat. Phasellus metus magna, mollis non orci in, tempor fermentum mi. Vivamus dapibus nisl ante, nec gravida urna tempus eget. 
+                 Ut volutpat eros dui, nec imperdiet nibh volutpat sit amet. Nulla rhoncus tincidunt eros, eu bibendum tellus venenatis sed. Suspendisse interdum dolor enim, at congue lacus molestie a. Curabitur leo libero, feugiat eget magna hendrerit,
+                  tempor maximus mauris. Fusce neque lacus, blandit quis dui sit amet, mattis venenatis diam. Morbi in augue eu ante scelerisque commodo. Integer non odio risus.</p>
+        </div>
+        
+    </div>
+
+    
+
+  </body>
+
+</html>
