@@ -21,8 +21,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
-
-    .addStyleEntry('app', './assets/styles/app.css')
+    .addStyleEntry('app_styles', './assets/styles/app.css')
 .enablePostCssLoader((options) => {
     options.postcssOptions = {
         plugins: {
